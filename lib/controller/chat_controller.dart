@@ -7,7 +7,7 @@ import 'package:flutter_gemini/flutter_gemini.dart';
 class ChatController extends GetxController {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
+  late final response;
   final Gemini gemini = Gemini.instance;
 
   Future<void> sendMessage(String message) async {
@@ -19,16 +19,23 @@ class ChatController extends GetxController {
       'uid': user.uid,
       'message': message,
       'time': FieldValue.serverTimestamp(),
-      'sender': user,
+      'sender': 'user',
     });
 
     Future<String> GetGeminiResponse(String message) async {
       try {
-        final response = await gemini.prompt(parts: [Part.text(message)]);
+        response = await gemini.prompt(parts: [Part.text(message)]);
         return response?.output ?? 'No response from Gemini.';
       } catch (e) {
         return 'Error: $e';
       }
     }
+
+    await _firestore.collection('chats').add({
+      'uid': user.uid,
+      'message': response,
+      'time': FieldValue.serverTimestamp(),
+      'user': 'ai',
+    });
   }
 }
