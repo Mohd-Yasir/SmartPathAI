@@ -1,30 +1,37 @@
 import 'package:dash_chat_2/dash_chat_2.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smart_path_ai/controller/auth_controller.dart';
+import '../controller/chat_controller.dart';
 
 class ChatScreen extends StatelessWidget {
   final TextEditingController messageController = TextEditingController();
-  final AuthController chatController = Get.put(AuthController());
+  final ChatController chatController = Get.put(ChatController());
   ChatUser currentUser = ChatUser(id: '0', firstName: 'user');
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(appBar: AppBar(title: Text('Chat')), body: _buildUI()),
+      child: Scaffold(
+        appBar: AppBar(title: Text('Chat')),
+        body: StreamBuilder<List<ChatMessage>>(
+          stream: chatController.fetchMessages(),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData) {
+              return Center(child: CircularProgressIndicator());
+            }
+            return DashChat(
+              currentUser: ChatUser(id: '0', firstName: 'User '),
+              onSend: (message) {
+                chatController.sendMessage(message.text);
+              },
+              messages: snapshot.data!,
+            );
+          },
+        ),
+      ),
     );
   }
-
-  Widget _buildUI() {
-    return DashChat(
-      currentUser: currentUser,
-      onSend: onSend,
-      messages: messages,
-    );
-  }
-
-  void onSend() {}
 }
 
 // SafeArea buildSafeArea() {
