@@ -13,9 +13,11 @@ class ChatController extends GetxController {
   Future<void> sendMessage(String message) async {
     User? user = _auth.currentUser;
     if (user == null) {
+      Get.snackbar('Error', 'You need to log in to send messages.');
       return;
     }
-    await _firestore.collection('chats').add({
+
+    await _firestore.collection('messages').add({
       'uid': user.uid,
       'message': message,
       'time': FieldValue.serverTimestamp(),
@@ -24,12 +26,14 @@ class ChatController extends GetxController {
 
     String geminiResponse = await getGeminiResponse(message);
 
-    await _firestore.collection('chats').add({
-      'uid': user.uid,
-      'message': geminiResponse,
-      'time': FieldValue.serverTimestamp(),
-      'user': 'ai',
-    });
+    if (geminiResponse.isNotEmpty) {
+      await _firestore.collection('messages').add({
+        'uid': 'ai',
+        'message': geminiResponse,
+        'time': FieldValue.serverTimestamp(),
+        'sender': 'AI',
+      });
+    }
   }
 
   Future<String> getGeminiResponse(String message) async {
@@ -49,9 +53,9 @@ class ChatController extends GetxController {
         .map((snapshot) {
           return snapshot.docs.map((doc) {
             return ChatMessage(
-              text: doc['text'],
+              text: doc['message'],
               user: ChatUser(id: doc['uid'], firstName: doc['sender']),
-              createdAt: (doc['item'] as Timestamp).toDate(),
+              createdAt: (doc['time'] as Timestamp).toDate(),
             );
           }).toList();
         });

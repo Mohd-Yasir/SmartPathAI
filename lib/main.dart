@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       showSemanticsDebugger: false,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: ChatScreen(),
+      home: Login(),
     );
   }
 }
