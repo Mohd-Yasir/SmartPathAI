@@ -53,7 +53,7 @@ Ensure [Flutter](https://flutter.dev/docs/get-started/install) is installed on y
 
 Watch the demo video to see SmartPathAI in action:
 
-[![SmartPathAI Demo](https://img.youtube.com/vi/x9zKi17u07M/0.jpg)](https://www.youtube.com/watch?v=x9zKi17u07M)
+[![SmartPathAI Demo](assets/SmartPathappvideo.gif)]
 
 *Note: The video showcases the app's current features and ongoing development.*
 
