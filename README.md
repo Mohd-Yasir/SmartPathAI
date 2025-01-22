@@ -89,5 +89,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - **Email**: [mohd.yasir@example.com](mailto:mohd.yasir@example.com)
 - **LinkedIn**: [Mohd Yasir](https://www.linkedin.com/in/mohd-yasir/)
 ```
-
-This version is formatted for a GitHub `README.md` file. Copy and paste it directly into your repository's `README.md`. Let me know if you need further assistance!
