@@ -9,7 +9,7 @@ Welcome to **SmartPathAI**, a Flutter-based application designed to offer a seam
 
 ## Upcoming Features
 
-We are continuously improving SmartPathAI to provide:
+I am continuously improving SmartPathAI to provide:
 
 - **Interactive Visualizations**: Real-time grid navigation demonstrations of various pathfinding algorithms.
 - **Algorithm Selection**: Explore and compare different pathfinding techniques.
@@ -88,6 +88,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contact
 
 - **Author**: Mohd Yasir
-- **Email**: [mohd.yasir@example.com](mailto:mohd.yasir@example.com)
+- **Email**: [mohdxyasir@gmail.com](mailto:mohdxyasir@gmail.com)
 - **LinkedIn**: [Mohd Yasir](https://www.linkedin.com/in/mohd-yasir/)
 ```
