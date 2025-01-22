@@ -29,4 +29,22 @@ Ensure [Flutter](https://flutter.dev/docs/get-started/install) is installed on y
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Mohd-Yasir/SmartPathAI.git
-   
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd SmartPathAI
+3. **Install Dependencies**:
+   ```bash
+   flutter pub get
+4. **Run the Application**:
+   ```bash
+   flutter run
+
+### Usage
+
+- *Step 1*: Launch the application on your preferred device or emulator.
+- *Step 2*: Sign up or log in to access the app.
+- *Step 3*: Start a conversation in the chat interface with the integrated LLM model.
+
+### Demo Video
+
+Watch the demo video to see SmartPathAI in action:
