@@ -89,5 +89,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - **Author**: Mohd Yasir
 - **Email**: [mohdxyasir@gmail.com](mailto:mohdxyasir@gmail.com)
-- **LinkedIn**: [Mohd Yasir](https://www.linkedin.com/in/mohd-yasir/)
-```
+- **LinkedIn**: [Mohd Yasir](https://www.linkedin.com/in/mohd-yasir-57bab024b/)
+
