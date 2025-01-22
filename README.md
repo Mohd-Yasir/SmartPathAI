@@ -29,22 +29,65 @@ Ensure [Flutter](https://flutter.dev/docs/get-started/install) is installed on y
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Mohd-Yasir/SmartPathAI.git
+   ```
 2. **Navigate to the Project Directory**:
    ```bash
    cd SmartPathAI
+   ```
 3. **Install Dependencies**:
    ```bash
    flutter pub get
+   ```
 4. **Run the Application**:
    ```bash
    flutter run
+   ```
 
-### Usage
+## Usage
 
-- *Step 1*: Launch the application on your preferred device or emulator.
-- *Step 2*: Sign up or log in to access the app.
-- *Step 3*: Start a conversation in the chat interface with the integrated LLM model.
+- **Step 1**: Launch the application on your preferred device or emulator.
+- **Step 2**: Sign up or log in to access the app.
+- **Step 3**: Start a conversation in the chat interface with the integrated LLM model.
 
-### Demo Video
+## Demo Video
 
 Watch the demo video to see SmartPathAI in action:
+
+[![SmartPathAI Demo](https://img.youtube.com/vi/x9zKi17u07M/0.jpg)](https://www.youtube.com/watch?v=x9zKi17u07M)
+
+*Note: The video showcases the app's current features and ongoing development.*
+
+## Contributing
+
+We welcome contributions to help improve SmartPathAI! Follow these steps to contribute:
+
+1. **Fork the Repository**:
+   ```bash
+   git fork https://github.com/Mohd-Yasir/SmartPathAI.git
+   ```
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add feature-name"
+   ```
+4. **Push to the Branch**:
+   ```bash
+   git push origin feature-name
+   ```
+5. **Open a Pull Request**.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Contact
+
+- **Author**: Mohd Yasir
+- **Email**: [mohd.yasir@example.com](mailto:mohd.yasir@example.com)
+- **LinkedIn**: [Mohd Yasir](https://www.linkedin.com/in/mohd-yasir/)
+```
+
+This version is formatted for a GitHub `README.md` file. Copy and paste it directly into your repository's `README.md`. Let me know if you need further assistance!
