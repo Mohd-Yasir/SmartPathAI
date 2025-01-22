@@ -1,16 +1,32 @@
-# smart_path_ai
+# SmartPathAI
 
-A new Flutter project.
+Welcome to **SmartPathAI**, a Flutter-based application designed to offer a seamless chat interface integrated with an LLM (Large Language Model). This project is in active development, with plans to incorporate advanced features like interactive visualizations, algorithm selection, and more.
+
+## Current Features
+
+- **Login/Signup with Authentication**: Secure user authentication for personalized access.
+- **Chat Interface**: Engage in interactive conversations powered by an LLM model.
+
+## Upcoming Features
+
+We are continuously improving SmartPathAI to provide:
+
+- **Interactive Visualizations**: Real-time grid navigation demonstrations of various pathfinding algorithms.
+- **Algorithm Selection**: Explore and compare different pathfinding techniques.
+- **Customizable Parameters**: Test algorithm performance under various conditions.
+- **Enhanced Animations and UI**: A visually appealing and responsive user interface.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow these steps to set up the app on your local machine:
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Ensure [Flutter](https://flutter.dev/docs/get-started/install) is installed on your system.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Mohd-Yasir/SmartPathAI.git
+   
