@@ -7,7 +7,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:smart_path_ai/view/login.dart';
 import 'package:smart_path_ai/view/signup.dart';
 
-const String Gemini_API_Key = 'AIzaSyATB6PJuCbH2ob6tE3bz7u8yLQwCvBZg1E';
+const String Gemini_API_Key = 'hidden';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
